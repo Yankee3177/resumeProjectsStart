@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from "react";
 import { bio } from "./api";
+import Projects from "./Projects";
+import Links from "./Links";
+import Contacts from "./Contacts";
 
 
 export default function Intro(){
@@ -17,11 +20,19 @@ export default function Intro(){
 
 
     return(
+        <main>
         <section id="introduction">
         
-        <h1>About me</h1>
-        <p>{par}</p>
+            <h1>About me</h1>
+            <p>{par}</p>
         
         </section>
+        <Projects/>
+        <Links/>
+        <Contacts/>
+
+        </main>
     );
 }
+
+//In the return statement just call all the functions in the component folder
