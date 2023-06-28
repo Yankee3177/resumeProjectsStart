@@ -3,6 +3,7 @@ import { bio } from "./api";
 import Projects from "./Projects";
 import Links from "./Links";
 import Contacts from "./Contacts";
+import '../App.css';
 
 
 export default function Intro(){
@@ -15,16 +16,18 @@ export default function Intro(){
         }
 
         fetchData();
-    },"");
+    },[]);
 
 
 
     return(
-        <main>
+        <main className="App-header">
         <section id="introduction">
         
-            <h1>About me</h1>
-            <p>{par}</p>
+            <h1 className="mainHeader">About me</h1>
+            <p className="mainParagraphs">{par}</p>
+            
+           
         
         </section>
         <Projects/>

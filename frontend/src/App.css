@@ -5,8 +5,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  min-height: 50vh;
+  display: grid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,23 +15,77 @@
 }
 
 section {
+  display: grid;
   margin-top: 4rem;
   text-align: left;
   background-color: #0b0a70;
-  min-height: 100vh;
-  display: block;
-  flex-direction: column;
-  align-items: center;
+  
+  row-gap: 20px;
+  grid-template-rows: 50px 500px;
+  
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-p {
+
+.mainButtons {
+  grid-column: 2;
+  grid-row: 1;
+  color:chartreuse;
+  border-radius: 50%;
+  padding:14px 35px;
+  
+}
+
+button:hover {
+  color: white;
+  background-color:black
+}
+
+.mainParagraphs {
+  grid-row: 2;
+  grid-column: 1;
+
   text-align: center;
 }
 
+.mainHeader {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: left;
+  
+}
 
+
+form {
+  padding: 2rem;
+  display: grid;
+  align-items: end;
+  align-content: center;
+  gap: 0.7rem;
+}
+
+.form_label {
+  text-align: center;
+  
+}
+
+.form_label_message{
+  grid-column: 2;
+}
+
+.btn{
+  background-color: #f6f6fa;
+  color:blue;
+  padding: 1.3rem;
+  font-family: inherit;
+  border: none;
+  margin-top: 1.3rem;
+  font-size: 0.9em;
+  
+}
 
 .App-link {
   color: #61dafb;
