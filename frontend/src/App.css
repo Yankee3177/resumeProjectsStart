@@ -49,19 +49,6 @@ section {
 }
 
 
-.mainButtons {
-  grid-column: 2;
-  grid-row: 1;
-  color:chartreuse;
-  border-radius: 50%;
-  padding:14px 35px;
-  
-}
-
-button:hover {
-  color: white;
-  background-color:black
-}
 
 .mainParagraphs {
   grid-row: 2;
@@ -87,6 +74,7 @@ form {
   gap: 0.7rem;
 }
 
+
 .form_label {
   text-align: center;
   
@@ -96,9 +84,9 @@ form {
   grid-column: 2;
 }
 
-.btn{
+.form-btn {
   background-color: #f6f6fa;
-  color:blue;
+  color:black;
   padding: 1.3rem;
   font-family: inherit;
   border: none;
@@ -106,6 +94,13 @@ form {
   font-size: 0.9em;
   
 }
+
+
+button:hover {
+  color: white;
+  background-color:greenyellow;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -121,4 +116,33 @@ form {
 
 .card-subtitle {
   font-size: 0.9rem;
+}
+
+.logo{
+  max-width: 30px;
+  max-height: 30px;
+  padding-right: 5px;
+  
+}
+
+.logo:hover{
+  opacity: 0.8;
+}
+a {
+  cursor: pointer;
+}
+
+/***************NavBar*******************/
+.navbar{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+
+.brand-text{
+  margin-left: 8px;
 }

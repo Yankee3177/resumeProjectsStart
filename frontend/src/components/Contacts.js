@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs, { sendForm } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -39,7 +39,7 @@ export default function Contacts(){
                 <textarea name="message" />
                 
 
-                <button className='btn' type="submit">
+                <button className='form-btn' type="submit">
                 Send Email
                 </button>
                 

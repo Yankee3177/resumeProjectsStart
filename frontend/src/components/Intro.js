@@ -1,41 +1,46 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { bio } from "./api";
 import Projects from "./Projects";
 import Links from "./Links";
 import Contacts from "./Contacts";
+import { NavBar } from "./NavBar";
+import { Element } from 'react-scroll';
 import '../App.css';
 
+export default function Intro() {
+  const [par, setPar] = useState("");
 
-export default function Intro(){
+  useEffect(() => {
+    const fetchData = async () => {
+      await bio().then(res => setPar(res.data)).catch(err => console.log(err));
+    }
 
-    const [par,setPar] = useState("");
+    fetchData();
 
-    useEffect(() => {
-        const fetchData = async () => {
-            await bio().then(res => setPar(res.data)).catch(err => console.log(err));
-        }
-
-        fetchData();
-    },[]);
-
+  }, []);
 
 
-    return(
-        <main className="App-header">
-        <section id="introduction">
-        
+  return (
+    <main>
+        <NavBar/>
+        <Element name="introduction">
+            <section>
             <h1 className="mainHeader">About me</h1>
             <p className="mainParagraphs">{par}</p>
-            
-           
-        
-        </section>
-        <Projects/>
-        <Links/>
-        <Contacts/>
+            </section>
+        </Element>
 
-        </main>
-    );
+        <Element name="projects">
+            <Projects />
+        </Element>
+
+        <Element name="links">
+            <Links />
+        </Element>
+
+        <Element name="contacts">
+            <Contacts />
+        </Element>
+    </main>
+  );
 }
-
-//In the return statement just call all the functions in the component folder
