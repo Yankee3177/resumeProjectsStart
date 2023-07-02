@@ -1,13 +1,13 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 
 
 
 
 export const NavBar = () => {
-    const [navbarBg, setNavbarBg] = useState("transparent");
+   /*  const [navbarBg, setNavbarBg] = useState("transparent");
 
     useEffect(() => {
 
@@ -23,19 +23,19 @@ export const NavBar = () => {
         if (window.scrollY > 1) {
           setNavbarBg("light");
         } else {
-          setNavbarBg("transparent");
+          setNavbarBg("light");
         }
-    };
+    }; */
   
     return (
         
-        <Navbar className="navbar" bg={navbarBg} expand="lg" fixed="top" transitionClassName="navbar-transition">
+        <Navbar className="navbar" bg="light" expand="lg" fixed="top" transitionClassName="navbar-transition">
             <Navbar.Brand className="navbar-brand">
                 <a href="https://github.com/Yankee3177/Projects" target="_blank" rel="noreferrer">
-                <img src='/githubLogo.png'  className="logo" />
+                <img src='/githubLogo.png' alt='Github Logo'  className="logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/yankiel-cruz-resto-46051a131/" target="_blank" rel="noreferrer">
-                <img src='/LinkedInLogo.png' className="logo" />
+                <img src='/LinkedInLogo.png' alt='LinkedIn Logo' className="logo" />
                 </a>
                 <span className="brand-text">My Website</span>
             

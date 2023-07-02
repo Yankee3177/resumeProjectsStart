@@ -41,6 +41,7 @@ export default function Intro() {
         <Element name="contacts">
             <Contacts />
         </Element>
+        
     </main>
   );
 }

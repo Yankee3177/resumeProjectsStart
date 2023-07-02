@@ -25,7 +25,7 @@
 section {
   display: grid;
   margin-top: 4rem;
-  text-align: left;
+  text-align: center;
   background-color: #2d2d36;
   font-family: BacasimeAntique;
   
@@ -56,12 +56,13 @@ section {
  
 
   text-align: center;
+  padding: 50px 50px;
 }
 
 .mainHeader {
   grid-row: 1;
   grid-column: 1;
-  text-align: left;
+  text-align: center;
   
 }
 
@@ -95,13 +96,6 @@ form {
   
 }
 
-
-button:hover {
-  color: white;
-  background-color:greenyellow;
-}
-
-
 .App-link {
   color: #61dafb;
 }
@@ -112,6 +106,7 @@ button:hover {
 .card-img {
   max-width: 266.85px;
   max-height: 141.35px;
+  
 }
 
 .card-subtitle {
@@ -130,6 +125,35 @@ button:hover {
 }
 a {
   cursor: pointer;
+}
+
+
+.Container-Project{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  
+}
+
+
+/***************Project Card*******************/
+
+.project-card{
+  margin: 5px;
+  
+  align-items: center;
+  
+}
+
+.card-row{
+  justify-content: center;
+  margin: 20px;
+  
+}
+
+.card-column{
+  margin: 5px;
 }
 
 /***************NavBar*******************/
