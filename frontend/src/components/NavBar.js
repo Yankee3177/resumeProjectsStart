@@ -32,10 +32,10 @@ export const NavBar = () => {
         <Navbar className="navbar" bg="light" expand="lg" fixed="top" transitionClassName="navbar-transition">
             <Navbar.Brand className="navbar-brand">
                 <a href="https://github.com/Yankee3177/Projects" target="_blank" rel="noreferrer">
-                <img src='/githubLogo.png' alt='Github Logo'  className="logo" />
+                <img src='/images/githubLogo.png' alt='Github Logo'  className="logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/yankiel-cruz-resto-46051a131/" target="_blank" rel="noreferrer">
-                <img src='/LinkedInLogo.png' alt='LinkedIn Logo' className="logo" />
+                <img src='/images/LinkedInLogo.png' alt='LinkedIn Logo' className="logo" />
                 </a>
                 <span className="brand-text">My Website</span>
             
