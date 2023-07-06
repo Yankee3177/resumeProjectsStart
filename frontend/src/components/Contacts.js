@@ -17,9 +17,7 @@ export default function Contacts(){
             console.log(error);
         });
     };
-    
-        //emailjs.sendForm('service_tppmjit', 'template_xeig8dh', form.current, 'DEz_VYqvBePW81Ay2')
- 
+     
     return(
         <section id="contact">
             <h1 className='mainHeaders'>Contact Information</h1>
