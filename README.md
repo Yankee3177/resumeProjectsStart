@@ -16,6 +16,7 @@ The page will reload when you make changes.\
 
 You also have to jump into the backend folder and use the command npx nodemon to start the node server.
 
+##News about the project
 
 This website implements node and react and showcases my knowledge of node, react, using third party API's(EmailJS), and some of my
 coding projects.
