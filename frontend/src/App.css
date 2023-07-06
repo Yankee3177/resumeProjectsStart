@@ -155,10 +155,12 @@ a {
 
 .project-card{
   margin: 5px;
+  background-color: white;
   
   align-items: center;
   
 }
+
 
 .card-row{
   justify-content: center;
@@ -169,6 +171,32 @@ a {
 .card-column{
   margin: 5px;
 }
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: green; /* Adjust the background color and opacity as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white; /* Adjust the text color as needed */
+  font-size: 0.9rem; /* Adjust the font size as needed */
+  opacity: 0;
+  transition: opacity 1s;
+  height: 56px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
 
 /***************NavBar*******************/
 .navbar{
