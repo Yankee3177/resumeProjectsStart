@@ -44,7 +44,7 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link as={ScrollLink} to="projects" smooth={true} duration={500}>Projects</Nav.Link>
-            <Nav.Link as={ScrollLink} to="links" smooth={true} duration={500}>Links</Nav.Link>
+            <Nav.Link as={ScrollLink} to="tech" smooth={true} duration={500}>Technologies</Nav.Link>
             <Nav.Link as={ScrollLink} to="contacts" smooth={true} duration={500}>Contacts</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -136,9 +136,18 @@ a {
   
 }
 
-.Skills-Img{
-  max-height: 35px;
-  max-width: 55px;
+.Tech-logos{
+  filter: grayscale(100%);
+  opacity: 0.3;
+  transition: 1s ease-in;
+  transform: scale(1);
+}
+
+.Tech-logos:hover{
+  filter: grayscale(0%);
+  transition: 1s;
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 

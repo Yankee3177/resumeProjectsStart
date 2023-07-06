@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { bio } from "./api";
 import Projects from "./Projects";
-import Links from "./Links";
+import Tech from "./Tech";
 import Contacts from "./Contacts";
 import { NavBar } from "./NavBar";
 import { Element } from 'react-scroll';
@@ -34,8 +34,8 @@ export default function Intro() {
             <Projects />
         </Element>
 
-        <Element name="links">
-            <Links />
+        <Element name="tech">
+            <Tech />
         </Element>
 
         <Element name="contacts">
