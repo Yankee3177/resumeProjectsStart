@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { serviceId,templateId,privKey } from './Util/Connections';
 
 
 
@@ -9,7 +10,7 @@ export default function Contacts(){
     const sendEmail = (e) => {
         e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
-        emailjs.sendForm('service_tppmjit', 'template_xeig8dh', form.current, 'DEz_VYqvBePW81Ay2')
+        emailjs.sendForm(serviceId, templateId, form.current, privKey)
         .then((result) => {
             alert("Message succesfully sent!");
         }, (error) => {
