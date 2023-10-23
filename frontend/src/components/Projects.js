@@ -26,7 +26,7 @@ export default function Projects() {
                   onMouseEnter={() => handleMouseEnter(0)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Card.Img src='/images/Photo1.jpg' style={{opacity:hovered === 0 ? 0.7 : 1}} />
+                  <Card.Img src='/images/recipe-app.png' style={{opacity:hovered === 0 ? 0.7 : 1}} />
                   {hovered === 0 && (
                     <div className="overlay">
                       <Card.Subtitle>This is a test to see if it works</Card.Subtitle>
@@ -43,7 +43,7 @@ export default function Projects() {
                   onMouseEnter={() => handleMouseEnter(1)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Card.Img src='/images/Photo1.jpg' style={{opacity:hovered === 1 ? 0.7 : 1}}/>
+                  <Card.Img src='/images/class-sql-interface.png' style={{opacity:hovered === 1 ? 0.7 : 1}}/>
                   {hovered === 1 && (
                     <div className="overlay">
                       <Card.Subtitle>This is a test to see if it works</Card.Subtitle>
@@ -62,7 +62,7 @@ export default function Projects() {
                   onMouseEnter={() => handleMouseEnter(2)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Card.Img src='/images/Photo1.jpg' style={{opacity:hovered === 2 ? 0.7 : 1}} />
+                  <Card.Img src='/images/stitching-design.png' style={{opacity:hovered === 2 ? 0.7 : 1}} />
                   {hovered === 2 && (
                     <div className="overlay">
                       <Card.Subtitle>This is a test to see if it works</Card.Subtitle>
@@ -79,7 +79,7 @@ export default function Projects() {
                   onMouseEnter={() => handleMouseEnter(3)}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Card.Img src='/images/Photo1.jpg' style={{opacity:hovered === 3 ? 0.7 : 1}} />
+                  <Card.Img src='/images/caesar-encryption.png' style={{opacity:hovered === 3 ? 0.7 : 1}} />
                   {hovered === 3 && (
                     <div className="overlay">
                       <Card.Subtitle>This is a test to see if it works</Card.Subtitle>

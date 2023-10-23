@@ -182,7 +182,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: green; /* Adjust the background color and opacity as needed */
+  background-color: rgb(21, 7, 207); /* Adjust the background color and opacity as needed */
   display: flex;
   align-items: center;
   justify-content: center;
