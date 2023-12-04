@@ -44,6 +44,7 @@ export default function Projects() {
             <Row className='card-row'>
               <Card className="project-card">
                 <Card.Title>Class SQL interface</Card.Title>
+                <Link to= "/sqlInterface">
                 <div
                   className={'image-container '}
                   onMouseEnter={() => handleMouseEnter(1)}
@@ -56,6 +57,7 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+                </Link>
               </Card>
             </Row>
           </Col>
@@ -63,6 +65,7 @@ export default function Projects() {
             <Row className='card-row'>
               <Card className="project-card">
                 <Card.Title>Stitching Design</Card.Title>
+                <Link to="/stitchingDesign">
                 <div
                   className={'image-container '}
                   onMouseEnter={() => handleMouseEnter(2)}
@@ -75,11 +78,13 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+                </Link>
               </Card>
             </Row>
             <Row className='card-row'>
               <Card className="project-card">
                 <Card.Title>Caesar Encryption</Card.Title>
+                <Link to="/caesarEncrypt">
                 <div
                   className={'image-container '}
                   onMouseEnter={() => handleMouseEnter(3)}
@@ -92,6 +97,7 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
+                </Link>
               </Card>
             </Row>
           </Col>

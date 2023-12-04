@@ -2,7 +2,10 @@ import {HashRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Intro from './components/Intro';
-import Recipe from './components/RecipeApp';
+import Recipe from './components/ProjectPages/RecipeApp';
+import Stitch from './components/ProjectPages/Stitching';
+import SqlInt from './components/ProjectPages/Sqlinterface';
+import CaesarEncryption from './components/ProjectPages/Caesar';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Routes>
           <Route path='/' exact element={<Intro/>} />
           <Route path='/recipeApp' exact element={<Recipe/>} />
+          <Route path='/sqlInterface' exact element={<SqlInt/>} />
+          <Route path='/stitchingDesign' exact element={<Stitch/>} />
+          <Route path='/caesarEncrypt' exact element={<CaesarEncryption/>} />
         </Routes>
       </Router>
       

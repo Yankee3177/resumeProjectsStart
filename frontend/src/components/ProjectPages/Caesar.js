@@ -1,13 +1,13 @@
-import { recipeApp } from "./api";
+import { caesarEncrypt } from "../api";
 import { useEffect, useState } from "react";
-import '../App.css';
+import 'A:/Repos/resumeportnew/frontend/src/App.css'
 
-export default function Recipe(){
+export default function CaesarEncryption(){
     const [par, setPar] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
-      await recipeApp().then(res => setPar(res.data)).catch(err => console.log(err));
+      await caesarEncrypt().then(res => setPar(res.data)).catch(err => console.log(err));
     }
 
     fetchData();
