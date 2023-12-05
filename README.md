@@ -27,7 +27,7 @@ If you navigate to /frontend/src/components you will find the body of the web ap
 
 ## News about the project
 
-Currently working on adding my projects to the projects section.
+Currently working on adding descriptions for the projects.
 
 
 I'm still working on the website and will update this readme file as more features are added.
